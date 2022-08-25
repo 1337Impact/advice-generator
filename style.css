@@ -1,0 +1,104 @@
+/* variables */
+:root {
+    --lc:hsl(193, 38%, 86%);
+    --ng: hsl(150, 100%, 66%);
+    --gb: hsl(217, 19%, 38%);
+    --dgb: hsl(217, 19%, 24%);
+    --db: hsl(218, 23%, 16%);
+  }
+
+/* reseting */
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* main stryling */
+.container{
+    height: 100vh;
+    background-color: var(--db);
+    display: flex;
+}
+
+.card{
+    height: 335px;
+    width: 540px;
+    margin: auto;
+    padding: 0 20px;
+    flex-direction: column;
+    border-radius: 14px;
+    background-color: var(--dgb);
+    position: relative;
+}
+
+.line{
+    margin-top: 50px;
+}
+
+.line h4{
+    color: var(--ng);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.advice p{
+    font-size: 28px;
+    text-align: center;
+    color: var(--lc);
+}
+
+.pause{
+    position: absolute;
+    bottom: 80px;
+}
+
+.dice{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: var(--ng);
+    position: absolute;
+    bottom: -30px;
+    justify-content: center;
+}
+
+.dice:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 30px var(--ng);
+}
+
+
+/* mobile style */
+@media (max-width: 550px){
+    .card{
+        width: 400px;
+    }
+    .pause img{
+        width: 350px;
+    }
+}
+
+@media (max-width: 375px){
+    .card{
+        width: 355px;
+    }
+    .pause{
+        width: 300px;
+    }
+}
+
+/* globals */
+.center
+{
+    display: flex;
+    align-items: center;
+}
