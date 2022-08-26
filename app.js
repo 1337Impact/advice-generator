@@ -15,7 +15,7 @@ async function setAdvice() {
 
 const getAdvice = async () => {
     try {
-        const res = await fetch("https://api.adviceslip.com/advice")
+        const res = await fetch("https://api.adviceslip.com/advice", { cache: 'no-cache' });
         const data = await res.json();
         return data.slip;
     } catch (e) {
